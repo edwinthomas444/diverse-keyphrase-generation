@@ -1,0 +1,22 @@
+{
+    "pkp_base": {
+        "name": "bert-base-uncased",
+        "state_dict": null,
+        "type_vocab_size": 2,
+        "num_labels": 4
+    },
+    "akp_base": {
+        "encoder_name": "bert-base-uncased",
+        "decoder_name": "bert-base-uncased",
+        "state_dict": null,
+        "type_vocab_size": 2
+    },
+    "akp_seq2set": {
+        "encoder_name": "bert-base-uncased",
+        "decoder_name": "bert-base-uncased",
+        "state_dict": null,
+        "type_vocab_size": 2,
+        "max_kps": 8,
+        "max_kp_len": 5
+    }
+}

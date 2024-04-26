@@ -1,0 +1,89 @@
+{
+    "project_path":"/home/edt000/u/thomased/work/codebase/coopsummer2023",
+    "output_path":"Project/checkpoints/phase6_exp/abstractive_models/bertbase_seq2set_scaled_rerun_kp20k/metrics_4(Beam)",
+    "model_map_key":"akp_seq2set",
+    "datasets":[
+        {
+            "name":"kp20k",
+            "doc":"UniKP/UniKeyphrase/processed/kp20k.test.seq.in",
+            "label":"UniKP/UniKeyphrase/processed/kp20k.test.seq.out",
+            "target":"UniKP/UniKeyphrase/processed/kp20k.test.absent"
+        },
+        {
+            "name":"krapivin",
+            "doc":"UniKP/UniKeyphrase/processed/krapivin.test.seq.in",
+            "label":"UniKP/UniKeyphrase/processed/krapivin.test.seq.out",
+            "target":"UniKP/UniKeyphrase/processed/krapivin.test.absent"
+        },
+        {
+            "name":"inspec",
+            "doc":"UniKP/UniKeyphrase/processed/inspec.test.seq.in",
+            "label":"UniKP/UniKeyphrase/processed/inspec.test.seq.out",
+            "target":"UniKP/UniKeyphrase/processed/inspec.test.absent"
+        },
+        {
+            "name":"semeval",
+            "doc":"UniKP/UniKeyphrase/processed/semeval.test.seq.in",
+            "label":"UniKP/UniKeyphrase/processed/semeval.test.seq.out",
+            "target":"UniKP/UniKeyphrase/processed/semeval.test.absent"
+        },
+        {
+            "name":"nus",
+            "doc":"UniKP/UniKeyphrase/processed/nus.test.seq.in",
+            "label":"UniKP/UniKeyphrase/processed/nus.test.seq.out",
+            "target":"UniKP/UniKeyphrase/processed/nus.test.absent"
+        }
+    ],
+    "model":{
+        "name": "bert-base-uncased",
+        "encoder_name": "bert-base-uncased",
+        "decoder_name": "bert-base-uncased",
+        "encoder_state_dict": null,
+        "decoder_state_dict": null,
+        "encoder_decoder_state_dict": "Project/checkpoints/phase6_exp/abstractive_models/bertbase_seq2set_scaled_rerun_kp20k/model.4.bin",
+        "type_vocab_size": 2,
+        "decoder_type_vocab_size": 2,
+        "num_labels":4,
+        "max_kps": 5,
+        "max_kp_len": 7,
+        "rnn_head": false,
+        "encoder_mlm": false,
+        "diversity_heads": false,
+        "precision_heads": false,
+        "precision_attn_layers": 1
+    },
+    "tokenizer":{
+        "path_or_name":"bert-base-uncased",
+        "trunc_conf":{
+            "len_a":382,
+            "len_b": 38
+        },
+        "max_len":384,
+        "max_len_d":40
+    },
+    "run_params":{
+        "batch_size":64,
+        "device":"cuda:0",
+        "top_k":5,
+        "thresh":0.0,
+        "cross_unit_attention": false,
+        "hungarian_assign": false,
+        "ignore_pad_attention": false,
+        "add_phi_tokens": false,
+        "filter_extkp_hidden_states": false,
+        "gt_setting": false,
+        "use_pseudo_labels": false,
+        "freeze_encoder": false,
+        "skip_none": true,
+        "vanilla_nar": false,
+        "input_embeds": false,
+        "mean_reduce_repeat": false,
+        "min_length": 5,
+        "max_length": 40,
+        "length_penalty": 0,
+        "early_stopping": false,
+        "no_repeat_ngram_size": 0,
+        "num_beams": 5,
+        "num_return_sequences": 1
+    }
+}

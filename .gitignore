@@ -1,0 +1,12 @@
+__pycache__
+.ipynb_checkpoints
+checkpoints
+rough.ipynb
+*_test.ipynb
+significance_test*.ipynb
+decoding.ipynb
+proposed.ipynb
+kp_extraction_modelling.ipynb
+data_analysis.ipynb
+kp_embeddings_experimental.ipynb
+kp_drop_evaluation.ipynb
